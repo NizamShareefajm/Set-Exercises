@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Witcher</title>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to right, #0f0f0f, #1b1b1b);
+      color: #eaeaea;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(0, 0, 0, 0.95);
+      z-index: 999;
+      padding: 15px 0;
+      box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin: 0 25px;
+    }
+
+    nav ul li a {
+      color: #f8d45c;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 2px;
+      background-color: #f8d45c;
+      transition: width 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffffff;
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-family: 'UnifrakturCook', cursive;
+      font-size: 48px;
+      color: #f8d45c;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #f8d45c;
+      display: inline-block;
+    }
+
+    h3 {
+      font-size: 26px;
+      color: #ffdf7f;
+    }
+
+    .description,
+    .character-description {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 1.7;
+      padding: 0 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    #cast ul li,
+    #characters ul li {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    #cast a,
+    .character-link {
+      color: #66d9ef;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    #cast a:hover,
+    .character-link:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    #characters ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    #characters ul li {
+      margin: 10px 20px;
+    }
+
+    .character-info {
+      background: radial-gradient(circle at top left, #202020, #121212);
+      margin: 30px auto;
+      padding: 30px;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(255, 213, 71, 0.3);
+      transition: 0.3s ease;
+    }
+
+    .character-info:hover {
+      transform: scale(1.015);
+      box-shadow: 0 0 40px rgba(255, 213, 71, 0.4);
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#plot">Plot</a></li>
+        <li><a href="#cast">Cast</a></li>
+        <li><a href="#characters">Characters</a></li>
+        <li><a href="https://www.netflix.com/title/80189685" target="_blank">Visit Netflix</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="plot">
+    <h2>Plot</h2>
+    <p class="description">
+      On the Continent, a war-torn world of elves, magic, and monsters, Geralt of Rivia — a solitary monster hunter — navigates a destiny intertwined with the sorceress Yennefer and the young princess Ciri. As kingdoms clash and secrets unfold, the trio must face their fates in a land where morality is never black and white.
+    </p>
+  </section>
+
+  <section id="cast">
+    <h2>Cast</h2>
+    <ul>
+      <li><a href="https://www.imdb.com/name/nm0147147/" target="_blank">Henry Cavill</a> as Geralt of Rivia</li>
+      <li><a href="https://www.imdb.com/name/nm9923141/" target="_blank">Anya Chalotra</a> as Yennefer of Vengerberg</li>
+      <li><a href="https://www.imdb.com/name/nm8463347/" target="_blank">Freya Allan</a> as Princess Cirilla</li>
+      <li><a href="https://www.imdb.com/name/nm5438541/" target="_blank">Joey Batey</a> as Jaskier</li>
+    </ul>
+  </section>
+
+  <section id="characters">
+    <h2>Characters</h2>
+    <ul>
+      <li><a href="#geralt" class="character-link">Geralt of Rivia</a></li>
+      <li><a href="#yennefer" class="character-link">Yennefer</a></li>
+      <li><a href="#ciri" class="character-link">Ciri</a></li>
+      <li><a href="#jaskier" class="character-link">Jaskier</a></li>
+    </ul>
+
+    <div id="geralt" class="character-info">
+      <h3>Geralt of Rivia</h3>
+      <p class="character-description">
+        Geralt is a stoic and skilled Witcher, trained to hunt monsters. Though often misunderstood, he possesses a deep moral code and loyalty to those he protects. With his enhanced abilities and swordsmanship, he battles creatures and human corruption alike.
+      </p>
+    </div>
+
+    <div id="yennefer" class="character-info">
+      <h3>Yennefer</h3>
+      <p class="character-description">
+        Yennefer is a powerful sorceress with a complex past. Her ambition and strength are matched only by her vulnerability and inner turmoil. She shares a tumultuous yet passionate bond with Geralt, shaping the fate of the Continent.
+      </p>
+    </div>
+
+    <div id="ciri" class="character-info">
+      <h3>Ciri</h3>
+      <p class="character-description">
+        Princess Cirilla of Cintra, known as Ciri, holds a mysterious power tied to ancient prophecies. Chased by dark forces, she becomes a ward of Geralt and trains under Witchers to face the destiny that awaits her.
+      </p>
+    </div>
+
+    <div id="jaskier" class="character-info">
+      <h3>Jaskier</h3>
+      <p class="character-description">
+        Jaskier is a bard with a sharp wit and a talent for trouble. He accompanies Geralt on many adventures, often providing comic relief and capturing their stories in ballads like "Toss a Coin to Your Witcher."
+      </p>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML & CSS Playground</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #1e1e2f, #2c2c3e);
+      color: #f1f1f1;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ff5f6d, #ffc371);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.5em;
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 50px 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2.5em;
+      color: #ffc371;
+      text-align: center;
+      margin-bottom: 40px;
+      border-bottom: 2px solid #ff5f6d;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 40px;
+      background-color: #2f2f44;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    li:hover {
+      transform: scale(1.02);
+    }
+
+    strong {
+      display: block;
+      font-size: 1.4em;
+      margin-bottom: 10px;
+      color: #ffdd57;
+    }
+
+    p {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+      color: #dcdcdc;
+    }
+
+    code {
+      background-color: #fffae5;
+      color: #1a1a1a;
+      padding: 4px 8px;
+      border-radius: 5px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    pre {
+      background-color: #1c1c28;
+      padding: 15px;
+      border-left: 5px solid #ff5f6d;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 1.1em;
+      color: #e0e0e0;
+    }
+
+    pre code {
+      background: none;
+      padding: 0;
+      color: #f1f1f1;
+    }
+
+    /* Optional enhancements */
+    ::selection {
+      background: #ff5f6d;
+      color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2em;
+      }
+      header p {
+        font-size: 1.2em;
+      }
+      h2 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>HTML & CSS Playground</h1>
+  <p>Let's Dive into the Fun World of Web Design!</p>
+</header>
+
+<section>
+  <h2>HTML Tags</h2>
+  <ul>
+    <li>
+      <strong>&lt;h1&gt; - &lt;h6&gt;</strong>
+      <p>Header tags for different levels of headings.</p>
+      <pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code></pre>
+    </li>
+    <li>
+      <strong>&lt;p&gt;</strong>
+      <p>Defines a paragraph.</p>
+      <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+    </li>
+    <li>
+      <strong>&lt;ul&gt; &amp; &lt;li&gt;</strong>
+      <p>Creates an unordered list and list items.</p>
+      <pre><code>&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    </li>
+    <li>
+      <strong>&lt;a&gt;</strong>
+      <p>Defines a hyperlink.</p>
+      <pre><code>&lt;a href="https://example.com"&gt;Link&lt;/a&gt;</code></pre>
+    </li>
+    <li>
+      <strong>&lt;img&gt;</strong>
+      <p>Embeds an image.</p>
+      <pre><code>&lt;img src="image.jpg" alt="Description"&gt;</code></pre>
+    </li>
+    <li>
+      <strong>&lt;div&gt;</strong>
+      <p>Defines a division or section.</p>
+      <pre><code>&lt;div&gt;Content&lt;/div&gt;</code></pre>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>CSS Properties</h2>
+  <ul>
+    <li>
+      <strong>color</strong>
+      <p>Sets the text color.</p>
+      <pre><code>color: blue;</code></pre>
+    </li>
+    <li>
+      <strong>font-size</strong>
+      <p>Sets the size of the font.</p>
+      <pre><code>font-size: 16px;</code></pre>
+    </li>
+    <li>
+      <strong>background-color</strong>
+      <p>Sets the background color.</p>
+      <pre><code>background-color: #f0f0f0;</code></pre>
+    </li>
+    <li>
+      <strong>margin</strong>
+      <p>Sets the margin space around an element.</p>
+      <pre><code>margin: 10px;</code></pre>
+    </li>
+    <li>
+      <strong>padding</strong>
+      <p>Sets the padding space around an element's content.</p>
+      <pre><code>padding: 5px;</code></pre>
+    </li>
+    <li>
+      <strong>border</strong>
+      <p>Sets the border around an element.</p>
+      <pre><code>border: 1px solid black;</code></pre>
+    </li>
+    <li>
+      <strong>text-align</strong>
+      <p>Sets the alignment of text.</p>
+      <pre><code>text-align: center;</code></pre>
+    </li>
+    <li>
+      <strong>display</strong>
+      <p>Defines how an element is displayed.</p>
+      <pre><code>display: block;</code></pre>
+    </li>
+  </ul>
+</section>
+
+</body>
+</html>
